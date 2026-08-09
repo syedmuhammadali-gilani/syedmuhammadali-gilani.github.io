@@ -1,475 +1,494 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Syed Muhammad Ali Gillani | Electrical Engineer</title>
+```
+<title>Syed Muhammad Ali Gilani | Electrical Engineer</title>
 
-    <meta name="description" content="Portfolio of Syed Muhammad Ali Gillani, Electrical Engineer specializing in Electronics, Embedded Systems, Power Systems and Automation.">
+<meta name="description" content="Portfolio of Syed Muhammad Ali Gilani, Electrical Engineer specializing in Electronics, Embedded Systems, Power Systems and Automation.">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0b1120;
-            color: #e5e7eb;
-            line-height: 1.7;
-        }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0b1120;
+        color: #e5e7eb;
+        line-height: 1.7;
+    }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 
-        .container {
-            width: min(1100px, 90%);
-            margin: auto;
-        }
+    .container {
+        width: min(1100px, 90%);
+        margin: auto;
+    }
 
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(11, 17, 32, 0.96);
-            border-bottom: 1px solid #1f2937;
-            backdrop-filter: blur(10px);
-        }
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(11, 17, 32, 0.97);
+        border-bottom: 1px solid #1f2937;
+        backdrop-filter: blur(10px);
+    }
 
+    .nav-container {
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .logo {
+        font-size: 19px;
+        font-weight: 700;
+        color: #ffffff;
+        white-space: nowrap;
+    }
+
+    .logo span,
+    .blue {
+        color: #60a5fa;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: #cbd5e1;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #60a5fa;
+    }
+
+    .hero {
+        min-height: 88vh;
+        display: flex;
+        align-items: center;
+        padding: 90px 0;
+    }
+
+    .hero-content {
+        max-width: 900px;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 7px 14px;
+        border: 1px solid #334155;
+        border-radius: 30px;
+        color: #93c5fd;
+        background: #111827;
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 7vw, 76px);
+        line-height: 1.05;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    .hero h2 {
+        font-size: clamp(20px, 3vw, 30px);
+        font-weight: 500;
+        color: #cbd5e1;
+        margin-bottom: 25px;
+    }
+
+    .hero p {
+        max-width: 800px;
+        font-size: 17px;
+        color: #94a3b8;
+        margin-bottom: 35px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 22px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        border: 1px solid #334155;
+        transition: 0.3s;
+    }
+
+    .btn-primary {
+        background: #2563eb;
+        color: white;
+        border-color: #2563eb;
+    }
+
+    .btn-primary:hover {
+        background: #1d4ed8;
+    }
+
+    .btn-secondary {
+        color: #cbd5e1;
+        background: #111827;
+    }
+
+    .btn-secondary:hover {
+        border-color: #60a5fa;
+        color: #60a5fa;
+    }
+
+    section {
+        padding: 90px 0;
+        border-top: 1px solid #1f2937;
+    }
+
+    .section-title {
+        margin-bottom: 45px;
+    }
+
+    .section-title small {
+        color: #60a5fa;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+
+    .section-title h2 {
+        color: white;
+        font-size: 38px;
+        margin-top: 8px;
+    }
+
+    .section-title p {
+        color: #94a3b8;
+        max-width: 750px;
+        margin-top: 10px;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1.4fr 0.8fr;
+        gap: 50px;
+    }
+
+    .about-text p {
+        color: #aab6c8;
+        margin-bottom: 18px;
+    }
+
+    .quick-info {
+        display: grid;
+        gap: 15px;
+    }
+
+    .info-card,
+    .skill-card,
+    .experience-card,
+    .education-card,
+    .contact-card,
+    .project-card,
+    .opportunity-box {
+        background: #111827;
+        border: 1px solid #1f2937;
+        border-radius: 12px;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .info-card strong {
+        display: block;
+        color: #ffffff;
+        margin-bottom: 5px;
+    }
+
+    .info-card span {
+        color: #94a3b8;
+        font-size: 14px;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .skill-card {
+        padding: 25px;
+    }
+
+    .skill-card h3 {
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+
+    .skill-list,
+    .target-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+
+    .skill,
+    .target {
+        padding: 7px 11px;
+        border-radius: 6px;
+        background: #1e293b;
+        color: #cbd5e1;
+        font-size: 13px;
+    }
+
+    .project-card {
+        padding: 35px;
+        border-radius: 15px;
+    }
+
+    .project-number {
+        color: #60a5fa;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .project-card h3 {
+        font-size: 30px;
+        color: white;
+        margin: 10px 0 5px;
+    }
+
+    .project-type {
+        color: #94a3b8;
+        margin-bottom: 25px;
+    }
+
+    .project-card p {
+        color: #aab6c8;
+        margin-bottom: 20px;
+    }
+
+    .project-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .project-details h4 {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .project-details ul,
+    .experience-card ul {
+        padding-left: 20px;
+        color: #aab6c8;
+    }
+
+    .tech {
+        margin-top: 25px;
+        padding-top: 20px;
+        border-top: 1px solid #263449;
+        color: #93c5fd;
+    }
+
+    .timeline {
+        display: grid;
+        gap: 20px;
+    }
+
+    .experience-card {
+        padding: 25px;
+    }
+
+    .experience-card h3 {
+        color: white;
+        font-size: 21px;
+    }
+
+    .experience-card .role {
+        color: #60a5fa;
+        font-size: 14px;
+        margin: 4px 0 12px;
+    }
+
+    .experience-card p {
+        color: #aab6c8;
+    }
+
+    .experience-card ul {
+        margin-top: 10px;
+    }
+
+    .education-card {
+        padding: 30px;
+    }
+
+    .education-card h3 {
+        color: white;
+        font-size: 23px;
+    }
+
+    .education-card .degree {
+        color: #60a5fa;
+        margin: 5px 0;
+    }
+
+    .education-card p {
+        color: #94a3b8;
+    }
+
+    .opportunity-box {
+        padding: 35px;
+        border-radius: 15px;
+    }
+
+    .opportunity-box p {
+        color: #aab6c8;
+        margin-bottom: 20px;
+    }
+
+    .target {
+        padding: 9px 14px;
+        font-size: 14px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contact-card {
+        padding: 25px;
+    }
+
+    .contact-card h3 {
+        color: white;
+        margin-bottom: 8px;
+    }
+
+    .contact-card p {
+        color: #94a3b8;
+        font-size: 14px;
+    }
+
+    .contact-card a {
+        color: #60a5fa;
+    }
+
+    footer {
+        padding: 35px 0;
+        border-top: 1px solid #1f2937;
+        text-align: center;
+        color: #64748b;
+        font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
         .nav-container {
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
+            min-height: auto;
+            padding: 15px 0;
         }
 
         .logo {
-            font-size: 20px;
-            font-weight: 700;
-            color: #ffffff;
-        }
-
-        .logo span,
-        .blue {
-            color: #60a5fa;
+            font-size: 16px;
         }
 
         .nav-links {
-            display: flex;
-            gap: 22px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: #cbd5e1;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #60a5fa;
+            display: none;
         }
 
         .hero {
-            min-height: 88vh;
-            display: flex;
-            align-items: center;
-            padding: 90px 0;
+            min-height: auto;
+            padding: 75px 0;
         }
 
-        .hero-content {
-            max-width: 900px;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 7px 14px;
-            border: 1px solid #334155;
-            border-radius: 30px;
-            color: #93c5fd;
-            background: #111827;
-            font-size: 13px;
-            margin-bottom: 25px;
-        }
-
-        .hero h1 {
-            font-size: clamp(42px, 7vw, 76px);
-            line-height: 1.05;
-            color: #ffffff;
-            margin-bottom: 20px;
-        }
-
-        .hero h2 {
-            font-size: clamp(20px, 3vw, 30px);
-            font-weight: 500;
-            color: #cbd5e1;
-            margin-bottom: 25px;
-        }
-
-        .hero p {
-            max-width: 800px;
-            font-size: 17px;
-            color: #94a3b8;
-            margin-bottom: 35px;
-        }
-
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 22px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 14px;
-            border: 1px solid #334155;
-            transition: 0.3s;
-        }
-
-        .btn-primary {
-            background: #2563eb;
-            color: white;
-            border-color: #2563eb;
-        }
-
-        .btn-primary:hover {
-            background: #1d4ed8;
-        }
-
-        .btn-secondary {
-            color: #cbd5e1;
-            background: #111827;
-        }
-
-        .btn-secondary:hover {
-            border-color: #60a5fa;
-            color: #60a5fa;
+        .about-grid,
+        .skills-grid,
+        .project-details,
+        .contact-grid {
+            grid-template-columns: 1fr;
         }
 
         section {
-            padding: 90px 0;
-            border-top: 1px solid #1f2937;
-        }
-
-        .section-title {
-            margin-bottom: 45px;
-        }
-
-        .section-title small {
-            color: #60a5fa;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 12px;
+            padding: 65px 0;
         }
 
         .section-title h2 {
-            color: white;
-            font-size: 38px;
-            margin-top: 8px;
-        }
-
-        .section-title p {
-            color: #94a3b8;
-            max-width: 750px;
-            margin-top: 10px;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1.4fr 0.8fr;
-            gap: 50px;
-        }
-
-        .about-text p {
-            color: #aab6c8;
-            margin-bottom: 18px;
-        }
-
-        .quick-info {
-            display: grid;
-            gap: 15px;
-        }
-
-        .info-card,
-        .skill-card,
-        .experience-card,
-        .education-card,
-        .contact-card,
-        .project-card,
-        .opportunity-box {
-            background: #111827;
-            border: 1px solid #1f2937;
-            border-radius: 12px;
-        }
-
-        .info-card {
-            padding: 20px;
-        }
-
-        .info-card strong {
-            display: block;
-            color: #ffffff;
-            margin-bottom: 5px;
-        }
-
-        .info-card span {
-            color: #94a3b8;
-            font-size: 14px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .skill-card {
-            padding: 25px;
-        }
-
-        .skill-card h3 {
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .skill-list,
-        .target-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 9px;
-        }
-
-        .skill,
-        .target {
-            padding: 7px 11px;
-            border-radius: 6px;
-            background: #1e293b;
-            color: #cbd5e1;
-            font-size: 13px;
+            font-size: 30px;
         }
 
         .project-card {
-            padding: 35px;
-            border-radius: 15px;
-        }
-
-        .project-number {
-            color: #60a5fa;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .project-card h3 {
-            font-size: 30px;
-            color: white;
-            margin: 10px 0 5px;
-        }
-
-        .project-type {
-            color: #94a3b8;
-            margin-bottom: 25px;
-        }
-
-        .project-card p {
-            color: #aab6c8;
-            margin-bottom: 20px;
-        }
-
-        .project-details {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-top: 25px;
-        }
-
-        .project-details h4 {
-            color: white;
-            margin-bottom: 10px;
-        }
-
-        .project-details ul,
-        .experience-card ul {
-            padding-left: 20px;
-            color: #aab6c8;
-        }
-
-        .tech {
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 1px solid #263449;
-            color: #93c5fd;
-        }
-
-        .timeline {
-            display: grid;
-            gap: 20px;
-        }
-
-        .experience-card {
             padding: 25px;
         }
+    }
+</style>
+```
 
-        .experience-card h3 {
-            color: white;
-            font-size: 21px;
-        }
-
-        .experience-card .role {
-            color: #60a5fa;
-            font-size: 14px;
-            margin: 4px 0 12px;
-        }
-
-        .experience-card p {
-            color: #aab6c8;
-        }
-
-        .experience-card ul {
-            margin-top: 10px;
-        }
-
-        .education-card {
-            padding: 30px;
-        }
-
-        .education-card h3 {
-            color: white;
-            font-size: 23px;
-        }
-
-        .education-card .degree {
-            color: #60a5fa;
-            margin: 5px 0;
-        }
-
-        .education-card p {
-            color: #94a3b8;
-        }
-
-        .opportunity-box {
-            padding: 35px;
-            border-radius: 15px;
-        }
-
-        .opportunity-box p {
-            color: #aab6c8;
-            margin-bottom: 20px;
-        }
-
-        .target {
-            padding: 9px 14px;
-            font-size: 14px;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .contact-card {
-            padding: 25px;
-        }
-
-        .contact-card h3 {
-            color: white;
-            margin-bottom: 8px;
-        }
-
-        .contact-card p {
-            color: #94a3b8;
-            font-size: 14px;
-        }
-
-        .contact-card a {
-            color: #60a5fa;
-        }
-
-        footer {
-            padding: 35px 0;
-            border-top: 1px solid #1f2937;
-            text-align: center;
-            color: #64748b;
-            font-size: 13px;
-        }
-
-        @media (max-width: 800px) {
-            .nav-container {
-                padding: 15px 0;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                min-height: auto;
-                padding: 75px 0;
-            }
-
-            .about-grid,
-            .skills-grid,
-            .project-details,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 65px 0;
-            }
-
-            .section-title h2 {
-                font-size: 30px;
-            }
-
-            .project-card {
-                padding: 25px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
 <nav>
     <div class="container nav-container">
-        <div class="logo">
-            Syed <span>Ali Gillani</span>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+```
+    <a href="#" class="logo">
+        Syed Muhammad Ali Gilani
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</div>
+```
+
 </nav>
 
-<header class="hero">
-    <div class="container hero-content">
+<main>
 
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+
+```
         <div class="badge">
             OPEN TO ENGINEERING OPPORTUNITIES
         </div>
 
         <h1>
             Syed Muhammad<br>
-            <span class="blue">Ali Gillani</span>
+            <span class="blue">Ali Gilani</span>
         </h1>
 
         <h2>
@@ -477,10 +496,10 @@
         </h2>
 
         <p>
-            Electrical Engineering graduate specializing in Electronics, with
-            engineering exposure in power systems, high-voltage equipment,
-            transformer testing and diagnostics, embedded systems, robotics,
-            and automation.
+            Electrical Engineering graduate specializing in Electronics,
+            with engineering exposure in power systems, high-voltage
+            equipment, transformer testing and diagnostics, embedded
+            systems, robotics, and automation.
         </p>
 
         <div class="buttons">
@@ -492,428 +511,456 @@
                 Contact Me
             </a>
 
-            <a href="#contact" class="btn btn-secondary">
-                CV Available on Request
+            <a href="mailto:syedmuhammadaligillani111@gmail.com" class="btn btn-secondary">
+                Email Me
             </a>
         </div>
 
     </div>
-</header>
+</div>
+```
+
+</section>
 
 <section id="about">
     <div class="container">
 
-        <div class="section-title">
-            <small>About Me</small>
-            <h2>Engineering Background</h2>
-        </div>
-
-        <div class="about-grid">
-
-            <div class="about-text">
-
-                <p>
-                    I am an Electrical Engineering graduate specializing in
-                    Electronics, with a strong interest in embedded systems,
-                    robotics, industrial automation, power systems, and
-                    electrical maintenance.
-                </p>
-
-                <p>
-                    During my undergraduate studies, I developed a foundation
-                    in electrical and electronic systems and gained engineering
-                    exposure through internships involving a 132 kV grid
-                    station, transformer testing and diagnostics, and a
-                    32 MW hydropower project.
-                </p>
-
-                <p>
-                    My final-year project focused on a Global Inertial
-                    Navigation System (GINS) prototype vehicle, giving me
-                    exposure to embedded systems, navigation concepts,
-                    positioning, sensor integration, testing, and
-                    hardware/software integration.
-                </p>
-
-                <p>
-                    I am seeking entry-level, graduate trainee, engineering
-                    trainee, and junior technical opportunities where I can
-                    strengthen my practical engineering skills and contribute
-                    to real-world projects.
-                </p>
-
-            </div>
-
-            <div class="quick-info">
-
-                <div class="info-card">
-                    <strong>Degree</strong>
-                    <span>BS Electrical Engineering — Electronics</span>
-                </div>
-
-                <div class="info-card">
-                    <strong>CGPA</strong>
-                    <span>3.22 / 4.00</span>
-                </div>
-
-                <div class="info-card">
-                    <strong>Graduation</strong>
-                    <span>2025</span>
-                </div>
-
-                <div class="info-card">
-                    <strong>Location</strong>
-                    <span>Rawalpindi / Islamabad, Pakistan</span>
-                </div>
-
-            </div>
-
-        </div>
+```
+    <div class="section-title">
+        <small>About Me</small>
+        <h2>Engineering Background</h2>
     </div>
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <p>
+                I am an Electrical Engineering graduate specializing in
+                Electronics, with a strong interest in embedded systems,
+                robotics, industrial automation, power systems, and
+                electrical maintenance.
+            </p>
+
+            <p>
+                During my undergraduate studies, I developed a foundation
+                in electrical and electronic systems and gained engineering
+                exposure through internships involving a 132 kV grid
+                station, transformer testing and diagnostics, and a
+                32 MW hydropower project.
+            </p>
+
+            <p>
+                My final-year project focused on a Global Inertial
+                Navigation System (GINS) prototype vehicle, giving me
+                exposure to embedded systems, navigation concepts,
+                positioning, sensor integration, testing, and
+                hardware/software integration.
+            </p>
+
+            <p>
+                I am seeking entry-level, graduate trainee, engineering
+                trainee, and junior technical opportunities where I can
+                strengthen my practical engineering skills and contribute
+                to real-world projects.
+            </p>
+
+        </div>
+
+        <div class="quick-info">
+
+            <div class="info-card">
+                <strong>Degree</strong>
+                <span>BS Electrical Engineering — Electronics</span>
+            </div>
+
+            <div class="info-card">
+                <strong>CGPA</strong>
+                <span>3.22 / 4.00</span>
+            </div>
+
+            <div class="info-card">
+                <strong>Graduation</strong>
+                <span>2025</span>
+            </div>
+
+            <div class="info-card">
+                <strong>Location</strong>
+                <span>Rawalpindi / Islamabad, Pakistan</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
 </section>
 
 <section id="skills">
     <div class="container">
 
-        <div class="section-title">
-            <small>Technical Skills</small>
-            <h2>Engineering Capabilities</h2>
-        </div>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <h3>Electrical & Power</h3>
-
-                <div class="skill-list">
-                    <span class="skill">Power Distribution</span>
-                    <span class="skill">Power Transmission</span>
-                    <span class="skill">High-Voltage Systems</span>
-                    <span class="skill">Transformer Testing</span>
-                    <span class="skill">Transformer Diagnostics</span>
-                    <span class="skill">Electrical Maintenance</span>
-                    <span class="skill">Electrical Safety</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <h3>Electronics & Embedded</h3>
-
-                <div class="skill-list">
-                    <span class="skill">Circuit Design</span>
-                    <span class="skill">Circuit Analysis</span>
-                    <span class="skill">Embedded Systems</span>
-                    <span class="skill">Microcontrollers</span>
-                    <span class="skill">Sensor Integration</span>
-                    <span class="skill">Hardware Testing</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <h3>Automation & Robotics</h3>
-
-                <div class="skill-list">
-                    <span class="skill">Robotics</span>
-                    <span class="skill">Industrial Automation</span>
-                    <span class="skill">Control Systems</span>
-                    <span class="skill">Arduino</span>
-                    <span class="skill">System Testing</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <h3>Software & Tools</h3>
-
-                <div class="skill-list">
-                    <span class="skill">Proteus</span>
-                    <span class="skill">MATLAB</span>
-                    <span class="skill">Arduino IDE</span>
-                    <span class="skill">Microsoft Office</span>
-                </div>
-            </div>
-
-        </div>
+```
+    <div class="section-title">
+        <small>Technical Skills</small>
+        <h2>Engineering Capabilities</h2>
     </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Electrical & Power</h3>
+
+            <div class="skill-list">
+                <span class="skill">Power Distribution</span>
+                <span class="skill">Power Transmission</span>
+                <span class="skill">High-Voltage Systems</span>
+                <span class="skill">Transformer Testing</span>
+                <span class="skill">Transformer Diagnostics</span>
+                <span class="skill">Electrical Maintenance</span>
+                <span class="skill">Electrical Safety</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Electronics & Embedded</h3>
+
+            <div class="skill-list">
+                <span class="skill">Circuit Design</span>
+                <span class="skill">Circuit Analysis</span>
+                <span class="skill">Embedded Systems</span>
+                <span class="skill">Microcontrollers</span>
+                <span class="skill">Sensor Integration</span>
+                <span class="skill">Hardware Testing</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Automation & Robotics</h3>
+
+            <div class="skill-list">
+                <span class="skill">Robotics</span>
+                <span class="skill">Industrial Automation</span>
+                <span class="skill">Control Systems</span>
+                <span class="skill">Arduino</span>
+                <span class="skill">System Testing</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Software & Tools</h3>
+
+            <div class="skill-list">
+                <span class="skill">Proteus</span>
+                <span class="skill">MATLAB</span>
+                <span class="skill">Arduino IDE</span>
+                <span class="skill">Microsoft Office</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+```
+
 </section>
 
 <section id="projects">
     <div class="container">
 
-        <div class="section-title">
-            <small>Featured Project</small>
-            <h2>Global Inertial Navigation System</h2>
-            <p>
-                Final-year engineering project demonstrating embedded systems,
-                navigation, positioning, and hardware/software integration.
-            </p>
+```
+    <div class="section-title">
+        <small>Featured Project</small>
+        <h2>Global Inertial Navigation System</h2>
+        <p>
+            Final-year engineering project demonstrating embedded systems,
+            navigation, positioning, and hardware/software integration.
+        </p>
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-number">
+            PROJECT 01
         </div>
 
-        <div class="project-card">
+        <h3>
+            GINS Navigation Prototype Vehicle
+        </h3>
 
-            <div class="project-number">
-                PROJECT 01
+        <div class="project-type">
+            Final Year Project
+        </div>
+
+        <p>
+            Developed a prototype vehicle based on the concept of a
+            Global Inertial Navigation System (GINS), combining
+            positioning and inertial navigation concepts for movement
+            tracking and navigation.
+        </p>
+
+        <div class="project-details">
+
+            <div>
+                <h4>Project Focus</h4>
+
+                <ul>
+                    <li>Embedded system development</li>
+                    <li>Navigation concepts</li>
+                    <li>GPS-based positioning</li>
+                    <li>Sensor integration</li>
+                    <li>Hardware/software integration</li>
+                </ul>
             </div>
 
-            <h3>
-                GINS Navigation Prototype Vehicle
-            </h3>
+            <div>
+                <h4>Engineering Skills</h4>
 
-            <div class="project-type">
-                Final Year Project
+                <ul>
+                    <li>Microcontroller-based systems</li>
+                    <li>Embedded programming concepts</li>
+                    <li>System testing</li>
+                    <li>Troubleshooting</li>
+                    <li>System behavior analysis</li>
+                </ul>
             </div>
 
-            <p>
-                Developed a prototype vehicle based on the concept of a
-                Global Inertial Navigation System (GINS), combining
-                positioning and inertial navigation concepts for movement
-                tracking and navigation.
-            </p>
+        </div>
 
-            <div class="project-details">
-
-                <div>
-                    <h4>Project Focus</h4>
-
-                    <ul>
-                        <li>Embedded system development</li>
-                        <li>Navigation concepts</li>
-                        <li>GPS-based positioning</li>
-                        <li>Sensor integration</li>
-                        <li>Hardware/software integration</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Engineering Skills</h4>
-
-                    <ul>
-                        <li>Microcontroller-based systems</li>
-                        <li>Embedded programming concepts</li>
-                        <li>System testing</li>
-                        <li>Troubleshooting</li>
-                        <li>System behavior analysis</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="tech">
-                <strong>Focus Areas:</strong>
-                Embedded Systems • GPS • Inertial Navigation •
-                Sensors • Microcontrollers • Robotics
-            </div>
-
+        <div class="tech">
+            <strong>Focus Areas:</strong>
+            Embedded Systems • GPS • Inertial Navigation •
+            Sensors • Microcontrollers • Robotics
         </div>
 
     </div>
+
+</div>
+```
+
 </section>
 
 <section id="experience">
     <div class="container">
 
-        <div class="section-title">
-            <small>Engineering Exposure</small>
-            <h2>Internships & Technical Training</h2>
+```
+    <div class="section-title">
+        <small>Engineering Exposure</small>
+        <h2>Internships & Technical Training</h2>
+        <p>
+            Engineering exposure gained through internships and
+            technical environments.
+        </p>
+    </div>
+
+    <div class="timeline">
+
+        <div class="experience-card">
+
+            <h3>132 kV Grid Station</h3>
+
+            <div class="role">
+                Electrical Engineering Internship
+            </div>
+
             <p>
-                Engineering exposure gained through internships and
-                technical environments.
+                Gained exposure to high-voltage electrical infrastructure,
+                substation equipment, and power distribution operations.
             </p>
+
+            <ul>
+                <li>High-voltage electrical systems</li>
+                <li>Substation equipment</li>
+                <li>Power distribution systems</li>
+                <li>Electrical safety practices</li>
+            </ul>
+
         </div>
 
-        <div class="timeline">
+        <div class="experience-card">
 
-            <div class="experience-card">
+            <h3>Transformer Testing & Diagnostics</h3>
 
-                <h3>132 kV Grid Station</h3>
-
-                <div class="role">
-                    Electrical Engineering Internship
-                </div>
-
-                <p>
-                    Gained exposure to high-voltage electrical infrastructure,
-                    substation equipment, and power distribution operations.
-                </p>
-
-                <ul>
-                    <li>High-voltage electrical systems</li>
-                    <li>Substation equipment</li>
-                    <li>Power distribution systems</li>
-                    <li>Electrical safety practices</li>
-                </ul>
-
+            <div class="role">
+                Electrical Engineering Internship
             </div>
 
-            <div class="experience-card">
+            <p>
+                Gained exposure to transformer testing, diagnostics,
+                maintenance concepts, and electrical troubleshooting.
+            </p>
 
-                <h3>Transformer Testing & Diagnostics</h3>
+            <ul>
+                <li>Transformer testing procedures</li>
+                <li>Transformer diagnostics</li>
+                <li>Electrical testing concepts</li>
+                <li>Maintenance and troubleshooting practices</li>
+            </ul>
 
-                <div class="role">
-                    Electrical Engineering Internship
-                </div>
+        </div>
 
-                <p>
-                    Gained exposure to transformer testing, diagnostics,
-                    maintenance concepts, and electrical troubleshooting.
-                </p>
+        <div class="experience-card">
 
-                <ul>
-                    <li>Transformer testing procedures</li>
-                    <li>Transformer diagnostics</li>
-                    <li>Electrical testing concepts</li>
-                    <li>Maintenance and troubleshooting practices</li>
-                </ul>
+            <h3>32 MW Hydropower Project</h3>
 
+            <div class="role">
+                Electrical Engineering Internship
             </div>
 
-            <div class="experience-card">
+            <p>
+                Gained exposure to a power-generation environment and
+                electrical infrastructure associated with hydropower.
+            </p>
 
-                <h3>32 MW Hydropower Project</h3>
-
-                <div class="role">
-                    Electrical Engineering Internship
-                </div>
-
-                <p>
-                    Gained exposure to a power-generation environment and
-                    electrical infrastructure associated with hydropower.
-                </p>
-
-                <ul>
-                    <li>Hydropower generation systems</li>
-                    <li>Electrical infrastructure</li>
-                    <li>Power generation and distribution</li>
-                    <li>Industrial electrical equipment</li>
-                </ul>
-
-            </div>
+            <ul>
+                <li>Hydropower generation systems</li>
+                <li>Electrical infrastructure</li>
+                <li>Power generation and distribution</li>
+                <li>Industrial electrical equipment</li>
+            </ul>
 
         </div>
 
     </div>
+
+</div>
+```
+
 </section>
 
 <section id="education">
     <div class="container">
 
-        <div class="section-title">
-            <small>Education</small>
-            <h2>Academic Background</h2>
+```
+    <div class="section-title">
+        <small>Education</small>
+        <h2>Academic Background</h2>
+    </div>
+
+    <div class="education-card">
+
+        <h3>
+            Federal Urdu University of Arts, Science & Technology
+        </h3>
+
+        <div class="degree">
+            Bachelor of Science in Electrical Engineering —
+            Electronics Specialization
         </div>
 
-        <div class="education-card">
+        <p>
+            CGPA: 3.22 / 4.00
+        </p>
 
-            <h3>
-                Federal Urdu University of Arts, Science & Technology
-            </h3>
-
-            <div class="degree">
-                Bachelor of Science in Electrical Engineering
-                — Electronics Specialization
-            </div>
-
-            <p>
-                CGPA: 3.22 / 4.00
-            </p>
-
-            <p>
-                Graduation: 2025
-            </p>
-
-        </div>
+        <p>
+            Graduation: 2025
+        </p>
 
     </div>
+
+</div>
+```
+
 </section>
 
-<section>
+<section id="opportunities">
     <div class="container">
 
-        <div class="section-title">
-            <small>Career Direction</small>
-            <h2>Open to Opportunities</h2>
-        </div>
+```
+    <div class="section-title">
+        <small>Career Direction</small>
+        <h2>Open to Opportunities</h2>
+    </div>
 
-        <div class="opportunity-box">
+    <div class="opportunity-box">
 
-            <p>
-                I am actively seeking entry-level and graduate trainee
-                opportunities where I can apply my electrical and electronics
-                engineering foundation while developing strong practical
-                engineering skills.
-            </p>
+        <p>
+            I am actively seeking entry-level and graduate trainee
+            opportunities where I can apply my electrical and electronics
+            engineering foundation while developing strong practical
+            engineering skills.
+        </p>
 
-            <div class="target-list">
+        <div class="target-list">
 
-                <span class="target">Electrical Engineering</span>
-                <span class="target">Electronics Engineering</span>
-                <span class="target">Embedded Systems</span>
-                <span class="target">Industrial Automation</span>
-                <span class="target">Power Systems</span>
-                <span class="target">Electrical Maintenance</span>
-                <span class="target">Robotics</span>
-                <span class="target">Control Systems</span>
-
-            </div>
+            <span class="target">Electrical Engineering</span>
+            <span class="target">Electronics Engineering</span>
+            <span class="target">Embedded Systems</span>
+            <span class="target">Industrial Automation</span>
+            <span class="target">Power Systems</span>
+            <span class="target">Electrical Maintenance</span>
+            <span class="target">Robotics</span>
+            <span class="target">Control Systems</span>
 
         </div>
 
     </div>
+
+</div>
+```
+
 </section>
 
 <section id="contact">
     <div class="container">
 
-        <div class="section-title">
-            <small>Contact</small>
-            <h2>Let's Connect</h2>
+```
+    <div class="section-title">
+        <small>Contact</small>
+        <h2>Let's Connect</h2>
+        <p>
+            I am open to engineering opportunities, graduate trainee
+            positions, internships, and technical discussions.
+        </p>
+    </div>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+            <h3>Email</h3>
             <p>
-                I am open to engineering opportunities, graduate trainee
-                positions, internships, and technical discussions.
+                <a href="mailto:syedmuhammadaligillani111@gmail.com">
+                    syedmuhammadaligillani111@gmail.com
+                </a>
             </p>
         </div>
 
-        <div class="contact-grid">
+        <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <p>
+                <a href="https://www.linkedin.com/in/syed-muhammad-ali-gilani-475158375/" target="_blank">
+                    View LinkedIn Profile →
+                </a>
+            </p>
+        </div>
 
-            <div class="contact-card">
-                <h3>Email</h3>
-                <p>
-                    Replace this with your professional email
-                </p>
-            </div>
+        <div class="contact-card">
+            <h3>Location</h3>
+            <p>
+                Rawalpindi / Islamabad, Pakistan
+            </p>
+        </div>
 
-            <div class="contact-card">
-                <h3>LinkedIn</h3>
-                <p>
-                    <a href="https://www.linkedin.com/in/syed-muhammad-ali-gilani-475158375/" target="_blank">
-                        View LinkedIn Profile →
-                    </a>
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <h3>Location</h3>
-                <p>
-                    Rawalpindi / Islamabad, Pakistan
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <h3>Professional Status</h3>
-                <p>
-                    Open to Engineering Opportunities
-                </p>
-            </div>
-
+        <div class="contact-card">
+            <h3>Professional Status</h3>
+            <p>
+                Open to Engineering Opportunities
+            </p>
         </div>
 
     </div>
+
+</div>
+```
+
 </section>
+
+</main>
 
 <footer>
     <div class="container">
-        <p>
-            © 2026 Syed Muhammad Ali Gillani — Electrical Engineering Portfolio
-        </p>
+        © 2026 Syed Muhammad Ali Gilani — Electrical Engineering Portfolio
     </div>
 </footer>
 
